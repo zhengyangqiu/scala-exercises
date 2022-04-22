@@ -1,12 +1,10 @@
-val scala3Version = "3.1.2"
+//one of the place to import third party of scala
 
-lazy val root = project
-  .in(file("."))
-  .settings(
-    name := "hello-world",
-    version := "0.1.0-SNAPSHOT",
+name :="s101"
 
-    scalaVersion := scala3Version,
+version :="0.1"
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
-  )
+scalaVersion :="2.13.3"
+
+libraryDependencies +="org.scala-lang.modules"%%"scala-xml"%"1.2.0"
+
